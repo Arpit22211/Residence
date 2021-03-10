@@ -1,0 +1,18 @@
+<%- include("partials/header")-%>
+
+<ul>
+  <li><h2 class="textdetails"><%= a.name %></h2></li>
+  <li><h3 class="textdetails"><%= a.number %></h3></li>
+  <li><h3 class="textdetails"><%= a.address %></h3></li>
+  <li><h3 class="textdetails"><%= a.rent %></h3></li>
+  <li><h3 class="textdetails"><%= a.city %></h3></li>
+  <li><h3 class="textdetails"><%= a.description %></h3></li>
+  <li><h3 class="textdetails"><%= a.state %></h3></li>
+  <li><h3 class="textdetails"><%= a.country %></h3></li>
+</ul>
+<form action="/post1" method="post">
+  <button type="submit" class="btn btn-primary btn-lg bt" name="button">Return to home page</button>
+</form>
+<a class="myButton" href="https://www.google.com/maps/dir/?api=1&destination=<%= a.address %>+<%= a.city %>&travelmode=car">Get Directions</a>
+
+<%- include("Partials/footer")-%>
